@@ -9,12 +9,16 @@ const useStringHook = () => {
         setStringHookState(stringHookState.split('').reverse().join(''))
     }
 
-    // double string -> hello -> hello hello
-
+    const doubleString = () => {
+        setStringHookState(stringHookState + (' ') + stringHookState)
+    }
+    
     return {
         stringHookState: stringHookState,
         HelloWorld: someWords,
-        reverseString: reverseString
+        reverseString: reverseString,
+        dblStr: doubleString, //you can rename on export
+        setStringHookState: setStringHookState
     }
 
 }
