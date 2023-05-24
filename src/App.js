@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import useStringHook from './hooks/useStringHook'
 import Example from './components/Example'
-import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 import useInput from './hooks/useInput';
+
 function App() {
 
   const { 
@@ -36,8 +36,17 @@ function App() {
       {/* <input {...inputField} /> */}
       <h3>First Name: {firstname.value}</h3> 
       <input  {...firstname} />
-      <h3>Last Name: {lastname.value}</h3>
-      <input {...lastname} />
+
+      {/* same as above */}
+      <h3>Last Name: {lastname.value}</h3>  
+      <input 
+        id={lastname.id} 
+        name= {lastname.name}
+        onChange={lastname.onChange}
+        value={lastname.value}
+        placeholder={lastname.placeholder}
+      />
+      
       <h3>Email: {email.value}</h3>
       <input {...email} />
       
