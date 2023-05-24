@@ -15,9 +15,9 @@ function App() {
   } = useStringHook()
 
 //  const inputField = useInput()
-  const firstname = useInput('fname','Please enter your First Name')
-  const lastname = useInput()
-  const email = useInput()
+  const firstname = useInput('fname','First Name')
+  const lastname = useInput('lname','Last Name')
+  const email = useInput('email','Email')
 
   return (
     <div className="App App-header">

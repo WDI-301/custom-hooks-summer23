@@ -12,7 +12,7 @@ const useInput = (id, placeholder) => {
         name: id,
         value: value,
         onChange: onChangeHandler,
-        placeholder: placeholder
+        placeholder: 'Please enter your ' + placeholder
 
     }  //export onChange
 }
