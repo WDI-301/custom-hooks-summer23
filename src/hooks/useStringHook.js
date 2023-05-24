@@ -9,6 +9,8 @@ const useStringHook = () => {
         setStringHookState(stringHookState.split('').reverse().join(''))
     }
 
+    // double string -> hello -> hello hello
+
     return {
         stringHookState: stringHookState,
         HelloWorld: someWords,
